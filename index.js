@@ -30,11 +30,9 @@ for (let i = 1; i <= 100; i++ ) {
         console.log("Buzz")
     }
     //altrimenti stampa FizzBuzz
-      //controllare se il numero e divisibile sia per 3 che per 5 e stampare a schermo FizzBuzz
-
-/*     else (i % 3 === 0 && i % 5 === 0) {
+      else (i % 3 === 0 && i % 5 === 0); {
         console.log("FizzBuzz")
-    } */
+    }
 }
 
 
