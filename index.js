@@ -13,7 +13,7 @@ Consigli del giorno:
 
 //programma per stampare i numeri da uno a 100
 for (let i = 1; i <= 100; i++ ) {
-    console.log(i)
+  
 
     //controllare se il numero e divisibile per 3 e 5
     //console.log(i % 3)
@@ -21,18 +21,24 @@ for (let i = 1; i <= 100; i++ ) {
 
   
 
-    //stampare Fizz al posto del numero ai multipli di 3
-    if (i % 3 === 0){
-        console.log("Fizz")
+   // Per i numeri che sono sia multipli di 3 che di 5 stampi 
+   //  FizzBuzz
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
     }
-    //stampa Buzz al posto del numero ai multipli di 5
-    else if (i % 5 === 0) {
-        console.log("Buzz")
+    
+    //stampa Buzz al posto del numero ai multipli di 3
+    else if (i % 3 === 0) {
+        console.log("Fizz");
     }
-    //altrimenti stampa FizzBuzz
-      else (i % 3 === 0 && i % 5 === 0); {
-        console.log("FizzBuzz")
-    }
+
+    //stampare Fizz al posto del numero ai multipli di 5
+      else if (i % 5 === 0) {
+        console.log("Buzz");
+      }
+       else {
+            console.log(i);
+       }
 }
 
 
